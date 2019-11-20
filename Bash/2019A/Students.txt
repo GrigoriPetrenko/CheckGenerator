@@ -1,0 +1,27 @@
+
+szenia|Nazwisko|imię|ulica|nr mieszkania|wzrost|waga|etap1|etap2|etap3|etap4
+1|Kochmańska|Anna|Kwiatowa 40|12|176|68|3|7|3|5
+2|Kaczyński|Jarosław|Srebrna 40|11|150|85|1|2|2|1
+3|Grzywacz|Krystyna|Kwiatowa 43|15|157|72|6|2|3|7
+4|Koszut|Olga|Kwiatowa 36|9|181|73|3|0|8|8
+5|Leniwczyk|Renata|Kwiatowa 27|2|174|71|5|7|7|6
+6|Stopyra|Teresa|Kwiatowa 31|6|172|70|4|8|9|7
+7|Braniewska|Leokadia|Poziomkowa 42|11|168|66|7|9|10|6
+8|Kowalska|Ewa|Kwiatowa 29/2|6|172|65|8|10|10|2
+9|Nowak|Natalia|Kwiatowa 45|22|172|68|5|3|8|0
+10|Niewczas|Barbara|Bydgoska 40|12|173|67|4|5|7|7
+11|Jankowska|Anna|Kwiatowa 38|12|174|66|6|7|6|8
+12|Mitura|Marzena|Kwiatowa 33/1|4|181|65|8|6|2|9
+13|Meczyńska|Małgorzata|Gdańska 44|7|169|71|7|8|0|10
+14|Florian|Marianna|Kwiatowa 53|22|170|72|6|10|7|3
+15|Fidyk|Przemysława|Pomorska 54|5|168|73|2|1|8|5
+16|Pokrzywa|Lidia|Kwiatowa 30/8|7|174|71|0|4|9|7
+17|Proszak|Estera|Kwiatowa 32|8|175|69|7|5|10|6
+18|Wojnar|Jadwiga|Wielorybia 29|1|173|69|8|6|3|8
+19|Wojdakiewicz|Krystyna|Kwiatowa 55|9|172|71|9|2|5|10
+20|Wróbel|Eleonora|Kwiatowa 34|8|178|70|10|6|7|10
+21|Janik|Prudencja|Kwiatowa 32|5|173|68|3|7|6|8
+22|Dobrzanska|Irena|Kwiatowa 34|6|181|66|5|3|8|9
+23|Malipod|Agnieszka|Kwiatowa 33|11|169|67|7|8|3|7
+24|Kraskowska|Anastazja|Kwiatowa 30|7|182|67|6|9|4|6
+25|Przygoda|Ewelina|Kwiatowa 29|6|174|69|8|10|6|8
