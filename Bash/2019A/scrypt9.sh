@@ -1,29 +1,30 @@
 #!/bin/bash
-#dzialanie=$1
 
+echo "===================================="
+echo " "
 for dzialanie in $@;
 do
-		if ( grep -qE '[\*\+\/\-](|)' <<< $dzialanie ) #czy dzialanie zawiera *;+;/ lub -
-				then #jezeli tak
-				ZNAK=$(sed -r 's/(.+)([\*\+\/\-])(.+)/\2/' <<< "$dzialanie") #przypisanie znaku do zmiennej
-				awk -F"[*+/-]" -v zn=$ZNAK '{ #usuwanie znaków jako delimiter
+	if ( grep -qE '[\*\+\/\-]{1}' <<< $dzialanie )
+	then
+	znak=$(sed -r 's/(.+)([\*\+\/\-])(.+)/\2/' <<< "$dzialanie")
+	awk -F"[*+/-]" -v zn=$znak '{
+	if ( NF != 2 ) {print "Należy przekazać dokładnie dwie liczby"; exit i; }
+	else { print "przekazano znak: ", zn}
+for (i=1; i<=NF; i++){
+if ($i !~ /^-?[0-9]+$/){
+print i, "Liczba ("$i")","jest nieprawidłowa";
+exit 1;
+}
+}
+dzialanie=$1 zn $2;
+if ( zn == "*") { wynik=$1*$2; print dzialanie, "=", wynik}
+else if ( zn == "/") { wynik=$1/$2; print dzialanie, "=", wynik}
+else if ( zn == "+") { wynik=$1+$2; print dzialanie, "=", wynik}
+else { wynik=$1-$2; print dzialanie, "=", wynik}
+}
+END { print "\n===================================" }' <<< $dzialanie
+else
+echo "Znak jest nieprawidłowy"
+fi
+done
 
-					if ( NF != 2 ) { print "Nalezy przekazac dokladnie dwie liczby"; exit 1; } else { print "Przekazano znak!", zn} 
-					for ($i=1; i<=NF; i++){
-						if ($i !~ /^[0-9]+$/) {
-							print i,"Liczba ("$i")","jest nieprawidlowa";
-							exit 1;
-						}
-					}
-					dzialanie=$1 zn $2;
-				
-					if ( zn == "*" ) { wynik=$1*$2; print dzialanie, "*", wynik }
-					else if ( zn == "/" ) { wynik=$1/$2; print dzialanie, "/", wynik }
-					else if ( zn == "+" ) { wynik=$1+$2; print dzialanie, "+", wynik }
-					else { wynik=$1-$2; print dzialanie, "-", wynik }
-				}
-				END { print "Koniec\n================================== "}' <<< $dzialanie
-		else
-			echo "ZNAK JEST NIEPRAWIDLOWY"
-		fi;
-done;

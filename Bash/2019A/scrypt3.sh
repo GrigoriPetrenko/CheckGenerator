@@ -8,5 +8,5 @@ do
 		echo " ${#line} ${line}  "
 	fi
 
-done < ~/Desktop/ATOS2019/Students.txt
+done < Students.txt
 
