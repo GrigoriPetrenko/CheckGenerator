@@ -1,0 +1,58 @@
+---sed from files ------
+sed -f sed_comands my_file
+
+    sed_comands:
+    s/This/That
+    s/test/another_test
+
+---flags------------
+s/pattern/replacment/flags
+
+- g указывает на то, что нужно обработать все вхождения шаблона, имеющиеся в строке.
+    sed 's/|/*/g' Students.txt
+- p указывает на то, что нужно вывести содержимое исходной строки.
+    sed -n 's/test/another test/p' myfile
+- w file указывает команде на то, что нужно записать результаты обработки текста в файл.
+    sed 's/|/*/w Students*.txt' Students.txt
+
+---Символы-разделители---------
+нужно заменить /bin/bash на /bin/csh в файле /etc/passwd
+    sed 's/\/bin\/bash/\/bin\/csh/' /etc/passwd
+or
+    sed 's!/bin/bash!/bin/csh!' /etc/passwd
+
+---Выбор фрагментов текста для обработки---
+Задать ограничение на номера обрабатываемых строк.
+    sed '2s/test/another test/' myfile
+Указать фильтр, соответствующие которому строки нужно обработать.
+    sed '2,3s/test/another test/' myfile
+    sed '2,$s/test/another test/' myfile до конца
+
+---Удаление строк---------
+sed '/^$/d' # output: usuwa puste linie
+sed '2d' # output: usuwa drugą linie
+sed '2,20d' # output: usuwa linie od 2 do 20
+sed '/test/d' myfile # Строки можно удалять и по шаблону
+
+---Вставка текста в поток---
+- i добавляет новую строку перед заданной.
+    echo "Another test" | sed 'i\First test '
+    sed '2i\This is the inserted line.' myfile
+- a добавляет новую строку после заданной.
+    echo "Another test" | sed 'a\First test '
+    sed '2a\This is the appended line.' myfile
+
+---Замена строк---
+- c позволяет изменить содержимое целой строки текста в потоке данных
+    sed '3c\This is a modified line.' myfile
+    sed '/This is/c This is a changed line of text.' myfile
+
+---Замена символов---
+- y работает с отдельными символами
+    sed 'y/123/567/' myfile
+
+---Вывод номеров строк---
+sed '=' myfile
+sed -n '/test/=' myfile
+
+
