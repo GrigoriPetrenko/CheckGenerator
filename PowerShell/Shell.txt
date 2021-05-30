@@ -1,0 +1,63 @@
+  
+  62 Get-ChildItem | Group-Object Extension | Sort-Object Count
+  63 Get-ChildItem | Select-Object Extension | Sort-Object extention -uniqie
+  64 Get-ChildItem | Select-Object Extension | Sort-Object extention -uniqie
+  65 Get-ExecutionPolicy
+  66 Set-ExecutionPolicy
+  
+  67 powershell.exe -noexit &"myscript.ps1"
+  68 function sum ([int]$a, [int]$b){...
+  69 sum 4 5
+  
+  70 $c =1,2,3,4,5
+  72 $d = $c[3]
+  
+  74 Set-Variable -name f -Value 3.142 -Option Constant
+  
+      $g = New-Object -ComObject "wscript.network"
+  78 $g.username
+  79 $g = New-Object -Type System.DateTime 2006,12,25
+  80 $g.get_DayOfWeek()
+  81 $j = Read-Host "Enter your name"
+  83 Write-Host "Hello" $a
+  84 Write-Host $a -ForegroundColor "red"
+  85 myscript.ps1 server1 benp
+  86 $servername = $args[0]
+  87 $username = $args[1]
+  
+  ------Do while----
+  $a=1
+  Do {$a=1; $a -le 10; $a++}
+  While ($a -lt 10)
+  
+  ------Do Until-------
+  $a=1
+  Do {$a=1; $a++}
+  Untill ($a -gt 10)
+  
+  -----For-------
+  For ($a=1; $a -le 10; $a++)
+  {$a}
+  
+  -----For Each-----
+  Foreach ($i in Get-Childitem c:\windows)
+  {$i.name; $i.creationtime}
+  
+  -----If--------
+  $a = "write"
+  if ($a -eq "red")
+  {"The colour is red"}
+  elseif ($a -eq "white")
+  {"The coulur is white"}
+  else
+  {"Anouther colour"}
+  
+  ------Switch-------
+  $a ="red"
+  Switch ($a)
+  {
+  "red" {"The colour is red"}
+  "white" {"The coulur is white"}
+  default {"Anouther colour"}
+  }
+  
