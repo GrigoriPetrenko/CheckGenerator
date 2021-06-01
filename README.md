@@ -10,4 +10,4 @@ If
 
 Use the command below and repeat the first:
  
-### chmod u+x script.sh
+### chmod u+x script_name.sh
