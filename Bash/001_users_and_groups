@@ -1,0 +1,19 @@
+/etc/passwd – podstawowe informacje dotyczące rozpoznanych przez system użytkowników;
+/etc/group – odpowiednik passwd dla grup;
+/etc/shadow – wspomniany już wcześniej plik z zaszyfrowanymi hasłami użytkowników;
+
+• useradd – dodawanie użytkownika do systemu.
+• userdel – usuwanie użytkownika.
+• usermod – modyfikacja konta.
+• groupadd – dodawanie grupy.
+• groupdel – usuwanie grupy.
+• groupmod – modyfikacja grupy.
+• passwd – ustawienie hasła, zmiana, blokowanie/odblokowanie konta, usuniecie hasła.
+• gpasswd – utworzenie, usunięcie hasła dla konta grupy.
+• su – polecenie służące do przelogowania się na inne konto.
+• sudo – delegowanie uprawnień administracyjnych na wybranych użytkowników.
+• users – wyświetlanie zalogowanych do komputera użytkowników.
+• groups – wyświetlenie grup użytkownika.
+• id – informacje o koncie użytkownika (ID wraz z przypisanymi grupami).
+• last – przedstawienie historii logowań konta.
+• whoami – sprawdzenie swojej nazwy użytkownika.
