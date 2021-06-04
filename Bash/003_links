@@ -1,0 +1,17 @@
+--look on inode --
+ls -li 
+
+    cp file.txt copy.txt
+17169973579416306 -rw-r--r-- 1 grigory grigory  0 Jun  4 20:50 copy.txt
+
+
+23080948090275677 -rw-r--r-- 2 grigory grigory  0 Jun  4 20:50 file.txt
+
+    ln file.txt h_link.txt !!!!!!!!!!!!!!!!!!!!!!Hard links only for files !!!!!!!!!!!!!!!!!
+23080948090275677 -rw-r--r-- 2 grigory grigory  0 Jun  4 20:50 h_link.txt
+
+    ln -s file.txt s_link.txt
+ 9288674231518497 lrwxrwxrwx 1 grigory grigory  8 Jun  4 20:51 s_link.txt -> file.txt
+
+
+ ln -s /mnt/c/Users/WorkPC/VscProjects/Shell-Bash shell_bash
