@@ -1,0 +1,11 @@
+To change the owner of the file:
+
+chown user_name file_name
+chown -R artur docoments
+
+Changing access rights to files:
+
+chmod [ugoa][+ - =][rwxs] file_name
+chmod a+r * -gives all users read access to all files in the directory.
+chmod 600 readme.txt
+chmod -R 644 /home/folder

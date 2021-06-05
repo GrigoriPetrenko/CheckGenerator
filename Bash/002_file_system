@@ -1,0 +1,13 @@
+/bin - Wykonywalne pliki binarne,
+/sbin - Wykonywalne pliki binarne, polecenia administracyjne najczęściej używane przez administratora systemu
+/etc - Pliki konfiguracyjne wymagane przez aplikacje, serwisy, procesy
+/dev - Pliki urządzeń np. /dev/tty1, /dev/sda1, /dev/cdrom1
+/boot - Pliki niezbędne do uruchomienia systemu np. linux kernel
+/proc - Katalog zawierający szczegółowe informacje o procesach systemowych
+/home - Katalogi domowe użytkowników
+/lib - Biblioteki systemowe, używane przez pliki binarne z /bin /sbin
+/root - Katalog użytkownika root
+/tmp - Katalog zawierający pliki tymczasowe
+/usr - Katalog zawierający pliki binarne, biblioteki, dokumentację, narzędzia oraz aplikacje
+/var - Katalog, w którym zapisywane są pliki np. logi systemowe, pliki baz danych, pliki poczty, kolejki drukarek
+/mnt - Katalog do którego montowane są systemy plików np. USB, dodatkowy dysk, CD-ROM, udziały sieciowe
