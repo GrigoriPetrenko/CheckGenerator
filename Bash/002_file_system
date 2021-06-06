@@ -11,3 +11,17 @@
 /usr - Katalog zawierający pliki binarne, biblioteki, dokumentację, narzędzia oraz aplikacje
 /var - Katalog, w którym zapisywane są pliki np. logi systemowe, pliki baz danych, pliki poczty, kolejki drukarek
 /mnt - Katalog do którego montowane są systemy plików np. USB, dodatkowy dysk, CD-ROM, udziały sieciowe
+
+
+--crontab--
+/etc/cron.allow - если существует, пользователи указанные в этом файле имеют возможность запуска заданий планировщика;
+/etc/cron.deny - если существует, пользователи указанные в этом файле НЕ имеют возможность запуска заданий планировщика.
+
+crontab -e	Редактирование или создание файла расписания для текущего пользователя
+crontab -l	Вывод содержимого расписания текущего пользователя
+crontab -r	Удаление файла расписания текущего пользователя
+crontab -u user	Работа с расписаниями конкретных пользователей. Доступно только суперпользователю<
+
+Запуск скрипта каждый понедельник в 9:00 и 18:00 часов:
+minute(s) hour(s) day(s) month(s) weekday(s) command(s)
+0 9,18 * * 1 /home/ivan/script.sh
