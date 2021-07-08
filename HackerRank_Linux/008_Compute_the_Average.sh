@@ -10,3 +10,4 @@ printf "%.3f" $(echo $((${arr// /+}))/$n | bc -l)
 
 
 #ctrl+d to end of input
+
